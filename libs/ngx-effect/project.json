@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/ngx-effect",
+  "sourceRoot": "libs/ngx-effect/src",
+  "prefix": "ngx-effect",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/ngx-effect"],
+      "options": {
+        "project": "libs/ngx-effect/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngx-effect/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngx-effect/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ngx-effect"],
+      "options": {
+        "jestConfig": "libs/ngx-effect/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ngx-effect/src/**/*.ts",
+          "libs/ngx-effect/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

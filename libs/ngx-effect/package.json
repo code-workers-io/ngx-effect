@@ -1,0 +1,14 @@
+{
+  "name": "@code-workers.io/ngx-effect",
+  "version": "1.0.1",
+  "peerDependencies": {
+    "@angular/common": ">=13.3.0",
+    "@angular/core": ">=13.3.0",
+    "rxjs": ">=7.4.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "license": "MIT",
+  "keywords": ["subscription-handling", "rxjs", "angular","stream-handling","subscription-management", "subscription-less"]
+}
