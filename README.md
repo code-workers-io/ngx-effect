@@ -1,6 +1,6 @@
 # @code-workers.io/ngx-effect
 
-You don't longer need to worry about handling subscriptions - stream-keeper will do it for you.
+You don't longer need to worry about handling subscriptions - ngx-effect will do it for you.
 
 ## Installation
 
