@@ -84,7 +84,7 @@ export class NgxEffect implements OnDestroy {
           of(v).pipe(
             errorProneOperators,
             catchError((err) => {
-              this.e.handleError;
+              this.e.handleError(err);
               return errorObservable ? errorObservable(err) : EMPTY;
             })
           )
