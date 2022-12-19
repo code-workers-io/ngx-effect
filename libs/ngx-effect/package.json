@@ -1,6 +1,6 @@
 {
   "name": "@code-workers.io/ngx-effect",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "peerDependencies": {
     "@angular/common": ">=12.0.0",
     "@angular/core": ">=12.0.0",
@@ -10,5 +10,11 @@
     "tslib": "^2.3.0"
   },
   "license": "MIT",
-  "keywords": ["subscription-handling", "rxjs", "angular","stream-handling","subscription-management", "subscription-less"]
+  "description": "NgxEffect let you easily handle your RxJs subscriptions",
+  "keywords": ["subscription-handling", "rxjs", "angular","stream-handling","subscription-management", "subscription-less"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-workers-io/ngx-effect.git"
+  },
+  "author": "Michael Berger"
 }
