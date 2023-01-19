@@ -71,23 +71,4 @@ export class NgxEffect implements OnDestroy {
   ngOnDestroy(): void {
     this.#sub.unsubscribe();
   }
-
-  // need to wrap the source with this
-  continueOnError =
-    <T, R>(
-      errorProneOperators: MonoTypeOperatorFunction<T>,
-      errorObservable?: (err: Error) => Observable<T | R>
-    ) =>
-    (o$: Observable<T>): Observable<R | T> =>
-      o$.pipe(
-        mergeMap((v) =>
-          of(v).pipe(
-            errorProneOperators,
-            catchError((err) => {
-              this.e.handleError(err);
-              return errorObservable ? errorObservable(err) : EMPTY;
-            })
-          )
-        )
-      );
 }
