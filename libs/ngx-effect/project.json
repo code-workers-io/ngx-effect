@@ -1,6 +1,6 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "root": "libs/ngx-effect",
   "sourceRoot": "libs/ngx-effect/src",
   "prefix": "ngx-effect",
   "targets": {
@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/ngx-effect"],
       "options": {
-        "jestConfig": "libs/ngx-effect/jest.config.js",
+        "jestConfig": "libs/ngx-effect/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -35,6 +35,12 @@
           "libs/ngx-effect/src/**/*.ts",
           "libs/ngx-effect/src/**/*.html"
         ]
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "angular"
       }
     }
   },
