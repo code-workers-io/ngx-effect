@@ -28,4 +28,4 @@ export class Component {
 ```
 
 ## Compatibility
-* Version 1.x.x is compatible with RxJs >=7.4.0 (Angular 13.x.x +)
+Version >= 1.1.x is compatible with RxJs >=6.5.0 (Angular 12.x.x +)
