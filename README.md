@@ -31,3 +31,6 @@ All subscriptions will be closed once `Component` gets destroyed.
 
 ## Compatibility
 Version >= 1.1.x is compatible with RxJs >=6.5.0 (Angular 12.x.x +)
+
+## Changelog
+See [CHANGELOG.md](./libs/ngx-effect/CHANGELOG.md)
